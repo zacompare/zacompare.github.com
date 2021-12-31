@@ -63,8 +63,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" ></script>
 <script>
   function zacompare(){
-    const t1 = document.getElementById('text1').value.trim()
-    const t2 = document.getElementById('text2').value.trim()
+    const t1 = document.getElementById('text1').value.toUpperCase().trim()
+    const t2 = document.getElementById('text2').value.toUpperCase().trim()
     const r = document.getElementById('result')
 
     const collator = new Intl.Collator('fr');  
